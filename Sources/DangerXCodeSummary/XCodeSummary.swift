@@ -26,7 +26,7 @@ public final class XCodeSummary {
         case testSummary = "tests_summary_messages"
     }
     
-    lazy var warnings: [Result] = {
+    public lazy var warnings: [Result] = {
         let warningMessages: [String] = json[WarningKeys.warnings] ?? []
         let ldWarningMessages: [String] = json[WarningKeys.ldWarning] ?? []
         let compileWarnings: [[String:Any]] = json[WarningKeys.compileWarnings] ?? []
