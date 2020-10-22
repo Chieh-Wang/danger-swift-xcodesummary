@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/nerdishbynature/octokit.swift",
         "state": {
           "branch": null,
-          "revision": "9ad4d6eff94ad1d9873d3b410a47c663c820d4bd",
-          "version": "0.10.0"
+          "revision": "c391cfba4d33f3f4c7d7d8fa6708970f7d30af82",
+          "version": "0.10.1"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/danger/swift",
         "state": {
           "branch": null,
-          "revision": "9abfbf269f7b1d4bb799ca8f52620180d63d953e",
-          "version": "3.0.0"
+          "revision": "012cde282a31cd1809477683383947096f8cf353",
+          "version": "3.6.1"
         }
       },
       {
