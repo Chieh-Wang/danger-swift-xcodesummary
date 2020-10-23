@@ -103,7 +103,8 @@ public final class XCodeSummary {
         warnings.filter(using: resultsFilter).removingDuplicates().forEach {
             if let file = $0.file,
                 let line = $0.line {
-                warn(message: $0.message, file: file, line: line)
+//                warn(message: $0.message, file: file, line: line)
+                warn($0.message)
             } else {
                 warn($0.message)
             }
