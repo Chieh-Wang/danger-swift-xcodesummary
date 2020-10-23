@@ -103,22 +103,22 @@ public final class XCodeSummary {
         warnings.filter(using: resultsFilter).removingDuplicates().forEach {
             if let file = $0.file,
                 let line = $0.line {
-                dsl.warn(message: $0.message, file: file, line: line)
+                warn(message: $0.message, file: file, line: line)
             } else {
-                dsl.warn($0.message)
+                warn($0.message)
             }
         }
         
         errors.filter(using: resultsFilter).removingDuplicates().forEach {
             if let file = $0.file,
                 let line = $0.line {
-                dsl.fail(message: $0.message, file: file, line: line)
+                fail(message: $0.message, file: file, line: line)
             } else {
-                dsl.fail($0.message)
+                fail($0.message)
             }
         }
         
-        messages.filter(using: resultsFilter).removingDuplicates().forEach { dsl.message($0.message) }
+        messages.filter(using: resultsFilter).removingDuplicates().forEach { message($0.message) }
     }
 }
 
