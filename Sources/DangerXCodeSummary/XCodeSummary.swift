@@ -128,7 +128,7 @@ extension Dictionary {
     }
 }
 
-extension Array where Element == Result {
+public extension Array where Element == Result {
     func filter(using resultsFilter: ResultsFilter?) -> [Element] {
         guard let resultsFilter = resultsFilter else { return self }
         return self.filter(resultsFilter)
